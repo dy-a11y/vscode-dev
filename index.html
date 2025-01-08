@@ -31,6 +31,12 @@
                 <input type="text">
             </label>
         </p>
+        <p>
+            <label for="tel">
+                tel
+                <input type="tel" placeholder="전화번호를 입력해주세요">
+            </label>
+        </p>
     </fieldset>
 </form>
 <form>
@@ -74,5 +80,171 @@
         <button type="submit">
             저장하기
         </button>
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <legend>좋아하는 과일</legend>
+        <input type="checkbox" id="banana" name="banana" value="banana">
+        <lable for="banana">banana</lable><br>
+        <input type="checkbox" id="apple" name="apple" value="apple">
+        <lable for="apple">apple</lable><br>
+        <input type="checkbox" id="orange" name="orange" value="orange">
+        <lable for="orange">orange</lable><br>
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <table>
+            <caption>제목</caption>
+            <tr>
+                <th>번호</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>콜라</td>
+                <td>1개</td>
+                <td>1500원</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>사이다</td>
+                <td>2개</td>
+                <td rowspan="2">1000원</td><!--행 병합-->
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>탄산수</td>
+                <td>3개</td>
+                <!--행 병합으로 생성하지 않습니다.-->
+            </tr>
+            <tr>
+                <td>총 금액</td>
+                <td colspan="3">6500원</td><!--열 병합으로 나머지 열 생성하징 않습니다.-->
+            </tr>
+        </table>
+    </fieldset> 
+</form>
+<form>
+    <fieldset>
+        <table>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>상품</th>
+                    <th>수량</th>
+                    <th>가격</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>콜라</td>
+                    <td>1개</td>
+                    <td>1500원</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>총 금액</td>
+                    <td colspan="3">6500원</td>
+                </tr>
+            </tfoot>
+        </table>
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <table>
+            <col style="width:80px">
+            <colgroup span="3" style="width:100px"></colgroup>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>상품</th>
+                    <th>수량</th>
+                    <th>가격</th>
+                </tr>
+            </thead>
+        </table>
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <table>
+            <caption><strong>col, row의 특성</strong></caption>
+            <thead>
+                <tr>
+                    <th scope="col">구분</th>
+                    <th scope="col">중간고사</th>
+                    <th scope="col">기말고사</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">전공</th>
+                    <td>A+</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <th scope="row">교양</th>
+                    <td>C-</td>
+                    <td>B</td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</form>
+
+<form>
+    <fieldset>
+        <audio src="Bourree - Joel Cummins.mp3" controls></audio><br>
+        <video src="sample.mp4" controls></video><br>
+        <audio controls>
+            <source src="sample.wav" type="audio/wav">
+            <source src="sample.mp3" type="audio/mp3">
+            지원하지 않는 웹브라우저 입니다.
+        </audio>
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <h1>레시피</h1>
+        <p>
+            1234레시피
+        </p>
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <button type="submit">Log in with Google</button><br>
+        <p>or</p>
+        <p>
+            <lable for="userid">
+                <input type="text" id="userid" placeholder="Username">
+            </lable>
+        </p>
+        <p>
+            <label for="userpwd">
+                <input type="password" id="userpwd" placeholder="Password">
+            </label>
+        </p>
+        <p>
+            <button type="submit">Log in</button>
+        </p>
+        <p>
+            <button type="submit">Forget your password?</button>
+        </p>
+    </fieldset>
+</form>
+<form>
+    <fieldset>
+        <h4>목차</h4>
+        <ol>
+            <li>역사</li>
+        </ol>
     </fieldset>
 </form>
